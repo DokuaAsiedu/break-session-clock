@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { TimerSet } from "./components";
 import { HiMiniPlayPause } from "react-icons/hi2";
 import { RiLoopLeftLine } from "react-icons/ri";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function App() {
 	const [period, setPeriod] = useState("Session");
@@ -102,7 +103,7 @@ export default function App() {
 	// }, [timerValue])
 
 	return (
-		<div className="h-full min-h-screen py-12 flex flex-col items-center justify-center text-white">
+		<div className="h-full min-h-screen py-12 flex flex-col items-center justify-center gap-4 text-white">
 			<div className="w-11/12 md:w-2/5 max-w-lg flex flex-col items-center justify-center gap-4 text-center">
 				<h1 className="text-5xl">25 + 5 Clock</h1>
 				<div className="w-full flex flex-row items-center justify-between">
@@ -135,6 +136,17 @@ export default function App() {
 					<button className="p-1" onClick={resetTimer}>
 						<RiLoopLeftLine />
 					</button>
+				</div>
+			</div>
+			<div className="flex flex-col items-center justify-start gap-2 text-center">
+				<p>Coded By Dokua</p>
+				<div className="flex flex-row items-center justify-center gap-4">
+					<a href="https://github.com/DokuaAsiedu">
+						<FaGithub />
+					</a>
+					<a href="https://www.linkedin.com/in/a-dokua-asiedu-123224132/">
+						<FaLinkedin />
+					</a>
 				</div>
 			</div>
 		</div>
